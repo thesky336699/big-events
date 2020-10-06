@@ -20,7 +20,7 @@
         <div class="title-box"></div>
         <!-- 登录框 -->
         <div class="login-box">
-            <form class="layui-form" action="">
+            <form class="layui-form" id="form-login">
                 <!-- 用户名 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
@@ -42,7 +42,7 @@
         </div>
         <!-- 注册框 -->
         <div class="reg-box">
-            <form class="layui-form" action="">
+            <form class="layui-form" id="form-reg">
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
                     <input type="text" name="username" required lay-verify="required|username" placeholder="请输入用户名" autocomplete="off" class="layui-input">
@@ -59,7 +59,7 @@
                 </div>
                 <!-- 提交按钮 -->
                 <div class="layui-form-item">
-                    <button class="layui-btn layui-btn-fluid layui-btn-warm" lay-submit lay-filter="formDemo">注册</button>
+                    <button class="layui-btn layui-btn-fluid layui-btn-warm" lay-submit lay-filter="formDemo" id="btn-reg">注册</button>
                 </div>
                 <div class="layui-form-item links">
                     <a href="javascript:;" id="link_login">去登录</a>
