@@ -7,14 +7,7 @@
     <title>后台管理系统</title>
     <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
     <link rel="stylesheet" href="/assets/css/index.css">
-    <!-- 引入layUI 的js
-    <script src="/assets/lib/layui/layui.all.js"></script> -->
-    <!-- 引入jq的js -->
-    <script src="/assets/lib/jquery.js"></script>
-    <!-- 引入base.js -->
-    <script src="/assets/js/base.js"></script>
-    <!-- 引入index的js -->
-    <script src="/assets/js/index.js"></script>
+
 </head>
 
 <body class="layui-layout-body">
@@ -30,12 +23,12 @@
                         <span class="text-photo">A</span> 个人中心
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a href="">基本资料</a></dd>
-                        <dd><a href="">更换头像</a></dd>
-                        <dd><a href="">重置密码</a></dd>
+                        <dd><a href="/user/user_info.html" target="fm">基本资料</a></dd>
+                        <dd><a href="/user/user_photo.html" target="fm">更换头像</a></dd>
+                        <dd><a href="/user/user_pwd.html" target="fm">重置密码</a></dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item">
+                <li class="layui-nav-item" id="close">
                     <a href="javascript:;"><i class="layui-icon layui-icon-component"></i>退出</a>
                 </li>
             </ul>
@@ -63,14 +56,12 @@
                     <li class="layui-nav-item">
                         <a href="javascript:;"><i class="layui-icon layui-icon-console"></i>个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>基本资料</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>更换头像</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
+                            <dd><a href="/user/user_info.html" target="fm"><i class="layui-icon layui-icon-app"></i>基本资料</a></dd>
+                            <dd><a href="/user/user_photo.html" target="fm"><i class="layui-icon layui-icon-app"></i>更换头像</a></dd>
+                            <dd><a href="/user/user_pwd.html" target="fm"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
 
                         </dl>
                     </li>
-
-
                 </ul>
             </div>
         </div>

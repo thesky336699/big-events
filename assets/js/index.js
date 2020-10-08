@@ -45,7 +45,7 @@ $(function() {
         }
     }
     //点击事件 点击退出
-    $('.layui-nav-item').on('click', function() {
+    $('#close').on('click', function() {
         layer.confirm('退出登录?', { icon: 3, title: '提示' }, function(index) {
             //   清除浏览器数据 token
             localStorage.removeItem('token');
