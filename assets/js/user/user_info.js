@@ -40,24 +40,6 @@ $(function() {
         initUserInfo()
     })
 
-    //  更新用户的基本信息  表单submit 事件
-    // $('.layui-form').on('submit', function(e) {
-    //         // 阻止默认行为
-
-    //         e.preventDefault();
-    //         $.ajax({
-    //             type: "post", //默认get
-    //             url: "/my/userinfo", //默认当前页
-    //             data: $(this).serialize(), //格式{key:value}
-    //             success: function(res) { //请求成功回调
-    //                 if (res.status !== 0) return layer.msg(res.message);
-    //                 layer.msg('更新用户信息成功！');
-    //                 // 成功调用index页面函数
-    //                 console.log(window.parent.getUserInfo());
-    //                 // window.parent.getUserInfo();
-    //             }
-    //         })
-    //     })
     // 监听表单的提交事件
     $('.layui-form').on('submit', function(e) {
         // 阻止表单的默认提交行为

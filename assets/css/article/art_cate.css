@@ -1,0 +1,25 @@
+body {
+    background-color: #f2f3f5;
+}
+
+.layui-card {
+    margin: 15px;
+}
+
+.set_btn {
+    float: right;
+    margin-top: 6px;
+}
+
+.layui-input {
+    width: 350px;
+}
+
+.layui-form {
+    margin-top: 25px;
+}
+
+.item-last {
+    padding-top: 15px;
+    text-align: center;
+}

@@ -29,10 +29,16 @@
                  //  console.log(res);
                  if (res.status !== 0) return layer.msg(res.message);
                  //  成功
-                 layer.msg('修改密码成功');
+
+                 layer.msg('还有' + time + '秒跳到登录页面');
 
                  //  清空form表单密码框内容
                  $('.layui-form')[0].reset();
+                 //  此时应该返回到登录页面
+                 setTimeout(function() {
+
+                     window.parent.location.href = '/login.html';
+                 }, 2000)
              },
 
          })
