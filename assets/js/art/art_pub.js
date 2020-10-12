@@ -39,6 +39,7 @@ $(function() {
     //给文件域绑定change事件
     $('#file').on('change', function(e) {
         var files = e.target.files;
+        // e.target.files===this.files
         //进行判断 文件长度
         if (files.length === 0) {
             return
